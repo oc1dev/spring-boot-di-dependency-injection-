@@ -14,13 +14,6 @@ public class IndexController {
 	private IServicio servicio;
 	
 	
-	/*@Autowired //inyectando en el constructor
-	public IndexController(IServicio servicio) {
-		this.servicio = servicio;
-	}*/
-
-
-
 	@GetMapping({"/","","/index"})
 	public String index (Model model) {
 		model.addAttribute("objeto", servicio.operacion());
@@ -28,10 +21,5 @@ public class IndexController {
 	}
 
 	
-	//inyectando en metodo setter
-	/*@Autowired
-	public void setServicio(IServicio servicio) {
-		this.servicio = servicio;
-	}*/
 	
 }
