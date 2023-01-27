@@ -3,8 +3,8 @@ package navarro.oc1.di.app.models.services;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("miServicioComplejo")
-@Primary
+//@Component("miServicioComplejo")
+
 public class MiServicioComplejo implements IServicio{
 
 	@Override
