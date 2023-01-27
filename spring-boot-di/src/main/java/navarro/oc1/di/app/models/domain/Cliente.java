@@ -8,7 +8,6 @@ public class Cliente {
 
 	@Value("${cliente.nombre}")
 	private String nombre;
-
 	@Value("${cliente.apellido}")
 	private String apellido;
 
