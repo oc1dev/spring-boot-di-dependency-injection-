@@ -1,17 +1,22 @@
 package navarro.oc1.di.app.models.domain;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
 @Component
-public class Factura {
+@RequestScope
+public class Factura implements Serializable{
+
+	private static final long serialVersionUID = -8043062819154050791L;
 
 	@Value("${factura.descripcion}")
 	private String descripcion;
